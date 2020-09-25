@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+:root{
+    --black-00: #171a1d;
+    --black-01: #24292d;
+    --black-02: #343a40;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #f2f2f2;
+}

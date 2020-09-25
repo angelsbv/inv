@@ -1,0 +1,16 @@
+{
+    "name": "inv",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "concurrently -n \"server,client\" -c \"blue,green\" \"cd client && npm start\" \"cd server && npm run start:dev\"",
+        "i:deps": "npm i && concurrently -n \"server,client\" -c \"blue,green\" \"cd client && npm i\" \"cd server && npm i\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^5.3.0"
+    }
+}

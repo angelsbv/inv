@@ -1,0 +1,13 @@
+div {
+	min-height: 90vh;
+	display: flex;
+	align-items: flex-start;
+}
+
+table {
+	min-width: 100vw;
+}
+
+a {
+	cursor: pointer;
+}

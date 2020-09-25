@@ -1,0 +1,19 @@
+<div>
+    <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+        <span class="form-title" [innerHTML]='!isEditing ? "Add Product" : "Edit Product"'></span>
+        <field fieldTitle="Product Name">
+            <input name="name" #name [(ngModel)]="product.name" autocapitalize="off" autofocus required type="text"
+                id="Product Name" autocomplete="off" spellcheck="false">
+        </field>
+        <field fieldTitle="Stock">
+            <input name="stock" class="field" #name [(ngModel)]="product.stock" autocapitalize="off" required
+                type="number" id="Stock" autocomplete="off" spellcheck="false">
+        </field>
+        <field fieldTitle="Price">
+            <input name="price" #name="ngModel" [(ngModel)]="product.price" autocapitalize="off" required type="number"
+                id="Price" autocomplete="off" spellcheck="false">
+        </field>
+        <button [innerHTML]='isEditing ? "Save" : "Add"'></button>
+    </form>
+    <ng-content></ng-content>
+</div>
